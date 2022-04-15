@@ -148,8 +148,8 @@ Requires the update-status parameter.`)
 			`Export metrics per-host`)
 		monitorMaxBatchSize = flags.Int("monitor-max-batch-size", 10000, "Max batch size of NGINX metrics")
 
-		httpPort  = flags.Int("http-port", 80, `Port to use for servicing HTTP traffic.`)
-		httpsPort = flags.Int("https-port", 443, `Port to use for servicing HTTPS traffic.`)
+		httpPort  = flags.Int("http-port", 8080, `Port to use for servicing HTTP traffic.`)
+		httpsPort = flags.Int("https-port", 8443, `Port to use for servicing HTTPS traffic.`)
 
 		sslProxyPort  = flags.Int("ssl-passthrough-proxy-port", 442, `Port to use internally for SSL Passthrough.`)
 		defServerPort = flags.Int("default-server-port", 8181, `Port to use for exposing the default server (catch-all).`)
